@@ -5,16 +5,13 @@ public class Main {
     public static void main(String[] args) {
 	Figure[] figure = {
             new Square(10),
-            new Square(23)};
-        for (int i = 0; i < figure.length; i++) {
-            System.out.println(figure[i].info());
-                    }
-        Rectangle rectangle = new Rectangle(7,8);
-        Rectangle rectangle1 = new Rectangle(8,9);
-        Rectangle rectangle2 = new Rectangle(13,58);
-        System.out.println(rectangle.info());
-        System.out.println(rectangle1.info());
-        System.out.println(rectangle2.info());
+            new Square(23),
+    new Rectangle(7,8),
+        new Rectangle(8,9),
+        new Rectangle(13,58)};
+        for (Figure value : figure) {
+            System.out.println(value.info());
+        }
     }
 }
 
